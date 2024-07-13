@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     '/profile': (context) => ProfilePage(),
     '/contacts': (context) => ContactsListPage(),
     '/settings': (context) => SettingsPage(),
-    '/conversation': (context) => ConversationPage(),
+    '/conversation': (context) => ConversationPage(conversationId:id)
     // Ajoutez d'autres routes au besoin
   },
 );
