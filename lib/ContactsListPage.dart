@@ -41,6 +41,17 @@ class ContactsListPage extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             },
+            void _showContactDetails(BuildContext context, String contact) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Détails du contact'),
+        content: Text('Vous avez sélectionné $contact'),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
             child: const Text('Fermer'),
           ),
         ],
